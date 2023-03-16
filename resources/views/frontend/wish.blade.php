@@ -33,7 +33,7 @@
                             <h5>{{$item->products->name}}</h5>
                         </div>
                         <div class="col-md-2 my-auto">
-                            <h5> Rp {{$item->products->selling_price}}</h5>
+                            {{-- <h5>  {{$item->products->small_description}}</h5> --}}
                         </div>
                         <div class="col-md-2 my-auto">
                             <input type="hidden" value="{{$item->prod_id}}" class="prod_id">

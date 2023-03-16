@@ -29,7 +29,7 @@
                         <label for="">Popular</label>
                         <input type="checkbox" name="popular">
                     </div>
-                    <div class="col-md-12 mb-3">
+                    {{-- <div class="col-md-12 mb-3">
                         <label for="">Meta Title</label>
                         <input type="text" name="meta_title" class="form-control">
                     </div>  
@@ -40,7 +40,7 @@
                     <div class="col-md-12 mb-3">
                         <label for="">Meta Description</label>
                         <textarea name="meta_description"  class="form-control" rows="3"></textarea>
-                    </div>
+                    </div> --}}
                     <div class="col-md-12">
                         <input type="file" name="image" class="form-control">
                     </div>

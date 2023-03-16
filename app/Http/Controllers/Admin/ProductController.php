@@ -14,7 +14,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::all();
-        return view('admin.products.index', compact('products'));
+        return view('admin.products.index', compact('products',));
     }
 
     public function addRakha()
@@ -38,15 +38,15 @@ class ProductController extends Controller
         $products->slug = $request->input('slug');
         $products->small_description = $request->input('small_description');
         $products->description = $request->input('description');
-        $products->original_price = $request->input('original_price');
-        $products->selling_price = $request->input('selling_price');
-        $products->tax = $request->input('tax');
+        // $products->original_price = $request->input('original_price');
+        // $products->selling_price = $request->input('selling_price');
+        // $products->tax = $request->input('tax');
         $products->qty = $request->input('qty');
         $products->status = $request->input('status') == TRUE ? '1' : '0';
         $products->trending = $request->input('trending') == TRUE ? '1' : '0';
-        $products->meta_title = $request->input('meta_title');
-        $products->meta_keywords = $request->input('meta_keywords');
-        $products->meta_description = $request->input('meta_description');
+        // $products->meta_title = $request->input('meta_title');
+        // $products->meta_keywords = $request->input('meta_keywords');
+        // $products->meta_description = $request->input('meta_description');
         $products->save();
         return redirect('products')->with('status', "Product Berhasil Ditambahkan!");
     }
@@ -75,15 +75,15 @@ class ProductController extends Controller
         $products->slug = $request->input('slug');
         $products->small_description = $request->input('small_description');
         $products->description = $request->input('description');
-        $products->original_price = $request->input('original_price');
-        $products->selling_price = $request->input('selling_price');
-        $products->tax = $request->input('tax');
+        // $products->original_price = $request->input('original_price');
+        // $products->selling_price = $request->input('selling_price');
+        // $products->tax = $request->input('tax');
         $products->qty = $request->input('qty');
         $products->status = $request->input('status') == TRUE ? '1' : '0';
         $products->trending = $request->input('trending') == TRUE ? '1' : '0';
-        $products->meta_title = $request->input('meta_title');
-        $products->meta_keywords = $request->input('meta_keywords');
-        $products->meta_description = $request->input('meta_description');
+        // $products->meta_title = $request->input('meta_title');
+        // $products->meta_keywords = $request->input('meta_keywords');
+        // $products->meta_description = $request->input('meta_description');
         $products->update();
         return redirect('products')->with('status', "Product Berhasil Diupdate!");
     }

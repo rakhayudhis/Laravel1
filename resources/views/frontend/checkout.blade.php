@@ -95,22 +95,22 @@
                                     <tr>
                                         <th>Name</th>
                                         <th>Qty</th>
-                                        <th>Price</th>
+                                        {{-- <th>Price</th> --}}
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @php $total = 0;    @endphp     
+                                    {{-- @php $total = 0;    @endphp      --}}
                                     @foreach ($cartitems as $item)
                                         <tr>
                                             <td> {{$item->products->name}}</td>
                                             <td> {{$item->prod_qty}}</td>
-                                            <td> {{$item->products->selling_price}}</td>
-                                            @php $total += $item->products->selling_price * $item->prod_qty ;    @endphp
+                                            {{-- <td> {{$item->products->selling_price}}</td> --}}
+                                            {{-- @php $total += $item->products->selling_price * $item->prod_qty ;    @endphp --}}
                                         </tr>
                                     @endforeach
                                 </tbody>
                             </table>
-                            <h6 class="px-2">Grand Total <span class="float-end">Rp {{$total}}</span></h6>
+                            {{-- <h6 class="px-2">Grand Total <span class="float-end">Rp {{$total}}</span></h6> --}}
                             <hr>
                             <button type="submit" class="btn btn-success w-100">Place Order</button>
                         @else

@@ -8,7 +8,7 @@
 <div class="py-3 mb-4 shadow-sm bg-warning border-top">
     <div class="container">
         <h6 class="mb-0">
-            <a href="{{url('category')}}">
+            <a href="{{url('category/')}}">
                 Collections
             </a> /
             <a href="{{url('category/'.$products->category->slug)}}">
@@ -37,13 +37,13 @@
                         @endif
                     </h2>
 
-                    <hr>
+                    {{-- <hr>
                     <label class="me-3">Original Price : <s>Rp {{ $products->original_price }} </s></label>
                     <label class="fw-bold">Selling Price : Rp {{ $products->original_price }} </label>
                     <p class="mt-3">
                         {!! $products->small_description !!}
                     </p>
-                    <hr>
+                    <hr> --}}
                     @if ($products->qty > 0)
                         <label class="badge bg-success">Stok Tersedia</label>
                     @else

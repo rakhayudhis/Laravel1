@@ -24,14 +24,14 @@
                         <input type="text" name="slug" value="{{$products->slug}}" class="form-control">
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Small Description</label>
+                        <label for="">Pengarang</label>
                         <textarea name="small_description" class="form-control" rows="3">{{$products->small_description}}</textarea>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="">Description</label>
                         <textarea name="description" class="form-control" rows="3">{{$products->description}}</textarea>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    {{-- <div class="col-md-6 mb-3">
                         <label for="">Original Price</label>
                         <input type="number" name="original_price" value="{{$products->original_price}}" class="form-control">
                     </div>
@@ -42,7 +42,7 @@
                     <div class="col-md-6 mb-3">
                         <label for="">Tax</label>
                         <input type="number" name="tax" value="{{$products->tax}}" class="form-control">
-                    </div>
+                    </div> --}}
                     <div class="col-md-6 mb-3">
                         <label for="">Quantity</label>
                         <input type="number" name="qty" value="{{$products->qty}}" class="form-control">
@@ -55,7 +55,7 @@
                         <label for="">Trending</label>
                         <input type="checkbox" {{$products->trending ? 'checked': '' }} name="trending">
                     </div>
-                    <div class="col-md-12 mb-3">
+                    {{-- <div class="col-md-12 mb-3">
                         <label for="">Meta Title</label>
                         <input type="text" name="meta_title" value="{{$products->meta_title}}" class="form-control">
                     </div>  
@@ -66,7 +66,7 @@
                     <div class="col-md-12 mb-3">
                         <label for="">Meta Description</label>
                         <textarea name="meta_description"  class="form-control" rows="3">{{$products->meta_description}}</textarea>
-                    </div>
+                    </div> --}}
                     @if ($products->image)
                         <img src="{{asset('assets/uploads/products/'.$products->image)}}" alt="">
                     @endif

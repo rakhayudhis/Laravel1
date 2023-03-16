@@ -46,12 +46,12 @@ class CheckoutController extends Controller
 
        
 
-        $total = 0;
-        $cartitems_total = Cart::where('user_id', Auth::id())->get();
-        foreach ($cartitems_total as $prod) {
-            $total += $prod->products->selling_price;
-        }
-        $order->total_price = $total;
+        // $total = 0;
+        // $cartitems_total = Cart::where('user_id', Auth::id())->get();
+        // foreach ($cartitems_total as $prod) {
+        //     $total += $prod->products->selling_price;
+        // }
+        // $order->total_price = $total;
 
         $order->tracking_no = 'Rakha' . rand(1111, 9999);
         $order->save();
@@ -63,7 +63,7 @@ class CheckoutController extends Controller
                 'order_id' => $order->id,
                 'prod_id' => $item->prod_id,
                 'qty' => $item->prod_qty,
-                'price' => $item->products->selling_price,
+                // 'price' => $item->products->selling_price,
             ]);
             $prod = Product::where('id', $item->prod_id)->first();
             $prod->qty = $prod->qty - $item->prod_qty;
@@ -95,12 +95,12 @@ class CheckoutController extends Controller
     {
         $cartitems = Cart::where('user_id', Auth::id())->get();
         
-        $total_price = 0;
+        // $total_price = 0;
 
-        foreach ($cartitems as $item)
-        {
-            $total_price += $item->products->selling_price * $item->product->qty;
-        }
+        // foreach ($cartitems as $item)
+        // {
+        //     $total_price += $item->products->selling_price * $item->product->qty;
+        // }
 
         $firstname = $request->input('firstname');
         $lastname  = $request->input('lastname ');
@@ -124,7 +124,7 @@ class CheckoutController extends Controller
             'state    ' =>  $state    ,
             'country  ' =>  $country  ,
             'pincode'   =>  $pincode  ,
-            'total_price' => $total_price
+            // 'total_price' => $total_price
         ]);
     }
 }

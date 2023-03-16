@@ -26,14 +26,14 @@
                         <input type="text" name="slug" class="form-control">
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="">Small Description</label>
+                        <label for="">Pengarang</label>
                         <textarea name="small_description" class="form-control" rows="3"></textarea>
                     </div>
                     <div class="col-md-12 mb-3">
                         <label for="">Description</label>
                         <textarea name="description" class="form-control" rows="3"></textarea>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    {{-- <div class="col-md-6 mb-3">
                         <label for="">Original Price</label>
                         <input type="number" name="original_price" class="form-control">
                     </div>
@@ -44,7 +44,7 @@
                     <div class="col-md-6 mb-3">
                         <label for="">Tax</label>
                         <input type="number" name="tax" class="form-control">
-                    </div>
+                    </div> --}}
                     <div class="col-md-6 mb-3">
                         <label for="">Quantity</label>
                         <input type="number" name="qty" class="form-control">
@@ -52,12 +52,15 @@
                     <div class="col-md-6 mb-3">
                         <label for="">Status</label>
                         <input type="checkbox" name="status">
-                    </div>
-                    <div class="col-md-6 mb-3">
+                        <br>
                         <label for="">Trending</label>
                         <input type="checkbox" name="trending">
                     </div>
-                    <div class="col-md-12 mb-3">
+                    {{-- <div class="col-md-6 mb-3">
+                        <label for="">Trending</label>
+                        <input type="checkbox" name="trending">
+                    </div> --}}
+                    {{-- <div class="col-md-12 mb-3">
                         <label for="">Meta Title</label>
                         <input type="text" name="meta_title" class="form-control">
                     </div>  
@@ -68,7 +71,7 @@
                     <div class="col-md-12 mb-3">
                         <label for="">Meta Description</label>
                         <textarea name="meta_description"  class="form-control" rows="3"></textarea>
-                    </div>
+                    </div> --}}
                     <div class="col-md-12">
                         <input type="file" name="image" class="form-control">
                     </div>

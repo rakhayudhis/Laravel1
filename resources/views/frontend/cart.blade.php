@@ -34,7 +34,7 @@
                             <h5>{{$item->products->name}}</h5>
                         </div>
                         <div class="col-md-2 my-auto">
-                            <h5> Rp {{$item->products->selling_price}}</h5>
+                            {{-- <h5>  {{$item->products->small_description}}</h5> --}}
                         </div>
                         <div class="col-md-2 my-auto">
                             <input type="hidden" value="{{$item->prod_id}}" class="prod_id">
@@ -45,7 +45,7 @@
                                     <input type="text" name="quantity "  class="form-control qty-input text-center" value="{{$item->prod_qty}}"/>
                                     <button class="input-group-text changeQuantity increment-btn">+</button>
                                 </div>
-                                @php $total += $item->products->selling_price * $item->prod_qty ;    @endphp
+                                {{-- @php $total += $item->products->selling_price * $item->prod_qty ;    @endphp --}}
                             @else
                                 <h5>Stok Habis</h5>
                             @endif
@@ -58,7 +58,7 @@
                 @endforeach
             </div>
             <div class="card-footer">
-                <h5> Total Harga :{{$total}}
+                {{-- <h5> Total Harga :{{$total}} --}}
                     <a href="{{url('checkout')}}" class="btn btn-outline-success float-end">Checkout</a href="{{url('checkout')}}">
                 </h5>    
             </div>

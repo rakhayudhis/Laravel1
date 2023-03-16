@@ -20,7 +20,7 @@
                                 <tr>
                                     <th>Tanggal Order</th>
                                     <th>Nomer Tracking</th>
-                                    <th>Total Harga</th>
+                                    <th>Pengarang</th>
                                     <th>Status</th>
                                     <th>Aksi</th>
                                 </tr>

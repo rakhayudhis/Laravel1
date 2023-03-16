@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('title')
-    Welcome E-Shop
+    Welcome E-Book
 @endsection
 
 @section('content')
@@ -19,8 +19,8 @@
                                     <img src="{{asset('assets/uploads/products/'.$prod->image)}}" alt="adda">
                                     <div class="card-body">
                                         <h5>{{$prod->name}}</h5>
-                                        <span class="float-start">{{$prod->selling_price}}</span>
-                                        <span class="float-end"> <s>{{$prod->original_price}}</s></span>
+                                        {{-- <span class="float-start">{{$prod->selling_price}}</span>
+                                        <span class="float-end"> <s>{{$prod->original_price}}</s></span> --}}
                                     </div>
                                 </div>
                             </a>

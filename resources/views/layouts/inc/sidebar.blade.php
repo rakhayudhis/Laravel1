@@ -17,26 +17,26 @@
         </li>
         <li class="nav-item {{Request::is('categories')? 'active':''}} ">
           <a class="nav-link" href="{{ url('categories') }}">
-            <i class="material-icons">person</i>
-            <p>Kategori</p>
+            <i class="material-icons">library_books</i>
+            <p>Kategori Buku</p>
           </a>
         </li>
         <li class="nav-item {{Request::is('add-category')? 'active':''}} ">
           <a class="nav-link" href="{{ url('add-category') }}">
-            <i class="material-icons">person</i>
-            <p>Tambah Kategori</p>
+            <i class="material-icons">library_add</i>
+            <p>Tambah Kategori Buku</p>
           </a>
         </li>
         <li class="nav-item {{Request::is('products')? 'active':''}} ">
           <a class="nav-link" href="{{ url('products') }}">
-            <i class="material-icons">person</i>
-            <p>Products</p>
+            <i class="material-icons">menu_book</i>
+            <p>Buku</p>
           </a>
         </li>
         <li class="nav-item {{Request::is('add-products')? 'active':''}} ">
           <a class="nav-link" href="{{ url('add-products') }}">
-            <i class="material-icons">person</i>
-            <p>Tambah Products</p>
+            <i class="material-icons">post_add</i>
+            <p>Tambah Buku</p>
           </a>
         </li>
         <li class="nav-item {{Request::is('orders')? 'active':''}} ">
